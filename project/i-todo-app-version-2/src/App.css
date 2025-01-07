@@ -1,0 +1,23 @@
+.width {
+    width: 86%;
+}
+
+.row .col-6,.row .col-4,.row .col-2 {
+    padding-left: 0;
+}
+
+input {
+    width: 100%;
+}
+
+.container {
+    max-width: 100%;
+}
+
+.kg-button {
+    min-width: 80px;
+}
+
+.kg-row {
+    margin: 10px 5px;
+}

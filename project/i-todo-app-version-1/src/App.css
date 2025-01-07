@@ -1,0 +1,34 @@
+.hh {
+    font-weight: 700;
+    font-size: 45px;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.width {
+    width: 86%;
+}
+
+.col-6, .col-4, .col-2 {
+    padding-left: 0;
+}
+
+input {
+    width: 100%;
+}
+
+.container {
+    max-width: 100%;
+}
+
+.todo-container .item-container {
+    text-align: left;
+}
+
+.kg-button {
+    min-width: 80px;
+}
+
+.kg-row {
+    margin: 10px 5px;
+}
