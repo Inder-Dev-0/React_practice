@@ -1,7 +1,10 @@
+import { useContext } from "react";
 import { useRef } from "react"
 import { BiMessageAdd } from "react-icons/bi";
+import { TodoItemsContext } from "../store/todo-items-store";
 
-function AppTodo({ onNewItem }) {
+function AppTodo() {
+    const { addNewItem } =  useContext(TodoItemsContext)
     const todoNameElement = useRef()
     const dueDateElement = useRef()
 
@@ -11,7 +14,7 @@ function AppTodo({ onNewItem }) {
         const dueDate = dueDateElement.current.value
         todoNameElement.current.value = ""
         dueDateElement.current.value = ""
-        onNewItem(todoName, dueDate)
+        addNewItem(todoName, dueDate)
     }
 
     return <form className="row kg-row width" onSubmit={handleAddButtonClicked}>
